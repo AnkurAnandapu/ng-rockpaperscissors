@@ -66,13 +66,13 @@
                     <button mat-fab color="accent" class="score">{{ scores[1] }}</button>
                 </div>
             </mat-card-content>
-            <button (click)="computerPlay()" mat-raised-button color="primary"> Play</button>
         </mat-card>
         <div *ngIf="!loading && isResultShow" class="flex-container flex-center" style="flex-direction: column">
             <h1> Winner : {{RESULT[theResult]}} </h1>
             <h1> Computer1 Gesture : {{WEAPONS[playerGesture]}} </h1>\
             <h1> Computer2 Gesture : {{WEAPONS[computerGesture]}} </h1>
         </div>
+        <button (click)="computerPlay()" mat-raised-button color="primary"> Play</button>
     </div>
     <br><br>
     <h1> Pick to continue or </h1>
